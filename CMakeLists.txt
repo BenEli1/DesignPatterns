@@ -3,4 +3,4 @@ project(DesignPatterns)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(DesignPatterns main.cpp prototype.h abstractFactory.h factory.h singleton.h)
+add_executable(DesignPatterns main.cpp prototype.h abstractFactory.h factory.h observer.h command.h somethingManger.h factory2.h builder.h adapter.h bridge.h)

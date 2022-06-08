@@ -6,51 +6,52 @@
 #define DESIGNPATTERNS_ABSTRACTFACTORY_H
 
 #endif //DESIGNPATTERNS_ABSTRACTFACTORY_H
+using namespace std;
 class ProductA{
-char* sword;
+    string sword;
 public:
     ProductA():sword("type of sword is: "){}
-    virtual char* print(){
+    virtual string print(){
         return sword;
     }
 };
 class ProductB{
-    char* shield;
+    string shield;
 public:
     ProductB():shield("type of shield is: "){}
-    virtual char* print(){
+    virtual string print(){
         return shield;
     }
 };
 class ProductA1:public ProductA{
-    char* swordA;
+    string swordA;
 public:
     ProductA1():swordA("Steel"){}
-    virtual char* print(){
+    virtual string print(){
        return swordA;
     }
 };
 class ProductB1:public ProductB{
-    char* shieldB;
+    string shieldB;
 public:
     ProductB1():shieldB("Wooden"){}
-    virtual char* print(){
+    virtual string print(){
         return shieldB;
     }
 };
 class ProductA2:public ProductA{
-    char* swordA;
+    string swordA;
 public:
     ProductA2():swordA("Light Saber"){}
-    virtual char* print(){
+    virtual string print(){
         return swordA;
     }
 };
 class ProductB2:public ProductB{
-    char* shieldB;
+    string shieldB;
 public:
     ProductB2():shieldB("Light Shield"){}
-    virtual char* print(){
+    virtual string print(){
         return shieldB;
     }
 };
