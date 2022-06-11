@@ -22,6 +22,13 @@ public:
     }
 };
 
+
+
+
+
+
+
+
 class Manager : public Employee{
     vector<Employee*> vEmployee;
     Manager* parent;
